@@ -1,0 +1,20 @@
+.box {
+  height: 150px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+.box ul li {
+  float: left;
+  list-style: none;
+  width: 93.75px;
+  height: 30px;
+  background-color: aquamarine;
+}
+@media screen and (max-width: 767px) {
+  .box {
+    width: 100%;
+  }
+  .box ul li {
+    width: 33.33%;
+  }
+}

@@ -1,0 +1,38 @@
+.a1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    border: 1px red solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: -100px;
+    margin-top:-5px;
+
+}
+.a2{
+    width: 200px;
+    height: 9px;
+   
+    background-color: red;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: width 1s ease-in;
+}
+.a1:hover .a2{
+    width: 0px;
+}
+.b1{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+  background: url(./title_sprite.png);
+  background-position: 0px;
+  background-repeat: no-repeat;
+  transition: background-position .5 s ease;
+  overflow: hidden;
+}
+.b1:hover{
+    background-position: -30px;
+}

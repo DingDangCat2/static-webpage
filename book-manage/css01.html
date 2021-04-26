@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         a:link{
+            color: green;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            color: aqua;
+        } /*lvha.链接需要单独制定样式*/
+      
+        a:active{
+            color:red;
+    
+        }
+      
+      ul li{
+          width: 50px; 
+          height: 20px;
+          display: inline-block;
+list-style: none;
+      }
+      ul li >a{
+        display: block;
+        width: 50px;
+        height: 20px;
+        line-height: 20px;
+        background-color: aqua;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+      }
+      ul li >a:hover{
+          background-color: blueviolet;
+      }
+      .d{
+width: 400px;
+height: 400px;
+background-color: aqua;
+background-image: url(./s.jpg);
+background-repeat: no-repeat;
+background-position: right top;
+      }
+      h2{background-color: aquamarine;
+          width: 100px;
+          height: 30px;
+          font-size: 5px;
+          line-height: 30px;
+          text-align: center;
+      }
+      h4{
+          display:inline-block;
+          width: 95px;
+          height: 20px; 
+        font-size: 12px;
+          background-image: url(./title_sprite.png);
+          background-repeat: no-repeat;
+          background-position: -35px;
+          line-height: 20px;
+          text-align: right;
+          background-attachment: scroll;
+      }
+   /*文字类的块级元素内不能再放块级元素，行内元素内不能再放块级元素 */
+    .name{
+        background-color: gainsboro;
+        color: blue;
+        text-align: center;
+        font:12px/1.5 'Microsoft YaHei';/*大小+行高*/
+    }
+   table,td{
+        border: green 2px solid;
+        border-collapse: collapse;/*合并相邻的边框*/
+     padding: 12pxu7;
+    }
+    .c{
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+        background-color: aqua;
+        border: 2px red solid;
+        box-shadow: 5px 5px 10px 5px gainsboro inset;
+    }
+    .d{width: 50px;
+    height: 50px;
+        margin-top: 20px;
+        background-color: blanchedalmond   ;
+        float: left;
+    }
+    .e{width: 10px;
+    height: 10px;
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <h3><a href="#one">w</a></h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h2 id="one">3e2</h2>       
+    <h4>成长守护平台</h4>
+    
+    <form>
+        <table>
+            <tr>
+                <td><input type="radio" name="sex">性别</td><td><input type="radio" name="sex">姓名：</td>
+                </tr>
+                <select multiple size="4">
+                    <optgroup size="2" label="first">
+                    <option value="123">1</option>
+                    <option selected>2</option>
+                    <option >3</option>
+                    <option>4</option>
+                </optgroup>
+                <optgroup aria-setsize="5" label="second">
+                    <option value="123">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </optgroup>
+                </select> 
+
+        </table>
+    </form>
+    <a href="#one">asd</a>
+    <ul>
+<li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li>
+    </ul>
+    <div class="name">
+        <p>继承测试</p>
+    </div>
+    <!--样式冲突的层叠，继承，(子承父业，font-，line-,text-元素开头的可以继承，以及color属性),优先级-->
+    <!--优先级（继承和通配符-0，元素选择器-1，类选择器-10，id选择器-100，行内-1000，！important-最大）（继承得到的权重是0）（a标签浏览器默认制定一个样式，所以a标签不会继承父级的样式。）-->
+<!--复合选择器的权重要叠加 ul li {}quan权重叠加是0002-->
+<table>
+    <tr>
+        <td>1qwesd</td><td>2ewdf</td>
+    </tr>
+    <tr>
+        <td>3</td><td>4s</td>
+    </tr>
+    <tr>
+   <td>5</td><td>6</td>
+    </tr>
+</table>
+<div class="c">
+<div class="d"></div>
+<div class="e"></div>
+</div>
+</body>
+</html>

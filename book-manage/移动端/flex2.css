@@ -1,0 +1,197 @@
+body{
+    max-width: 540px;
+    min-width: 320px;
+    padding: 0;
+    margin: 0 auto;
+background-color:whitesmoke;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    position: fixed;/*固定定位以屏幕为准*/
+    top: 0;
+    max-width: 540px;
+    min-width: 320px;
+    width: 100%;
+    height: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+ 
+}
+.search2{
+    width: 44px;
+    height: 44px;
+    font-size: 10px;
+   color:slateblue;
+    text-align: center;
+
+}
+.search1{
+    position: relative;
+    font-size: 13px;
+    color: grey;
+    box-sizing: border-box;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    line-height: 30px;
+height: 80%;
+margin-top: 5px;
+    flex: 1;
+    padding-left: 30px;
+}
+.search2::before{
+    width: 23px;
+    height: 23px;
+    background-color: yellow;
+    display: block;
+    content: '';
+    margin: 5px auto;
+    border-radius: 50%;
+}
+.search1::before{
+    position: absolute;
+    top: 5.5px;
+    left: 5px;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+.banner{
+    box-sizing: border-box;
+    height: 100px;
+border: 1px solid gainsboro;
+    flex: 1;
+    margin-top: 46px;
+}
+.flex10{
+   
+    height: 64px;
+    border-radius: 5px;
+    margin: 8px 4px 2px;
+  
+}
+.flex10 ul{
+    padding: 0;
+  
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.flex10 ul li{
+    flex: 1;
+}
+.flex10 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.ul1 li a span[class*="s"]::after{
+    content: '\e90c';
+    font-family: 'icomoon';
+    width: 32px;
+    height: 32px;
+ 
+}
+nav{
+  
+    border-radius: 8px;
+    margin: 0 4px 3px;
+    overflow: hidden;
+  
+}
+.com{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: thistle;
+    height: 88px;
+ 
+    margin-top: 3px;
+}
+.com1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex: 1;
+
+}
+.com .com1:nth-child(-n+2){
+    border-right: 1px solid gainsboro;
+}
+.com1 a{
+    display: block;
+    color: aliceblue;
+    line-height:40px;
+text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+    flex: 1;
+    display: block;
+    
+}
+.com:nth-child(1){
+    background: -webkit-linear-gradient(left,#fA5A55,#FA994D);
+}
+.com:nth-child(2){
+    background: -webkit-linear-gradient(left,#4b90ed,#53bced);
+}
+.com:nth-child(3){
+    background: -webkit-linear-gradient(left,#34c2a9,#6cd559);
+}
+.com1 a[class^="a4"]::after{
+    display: block;
+content:'\e906' ;
+font-family:'icomoon';
+} 
+aside{
+    border-radius: 8px;
+    margin: 0 4px;
+    background:-webkit-linear-gradient(left,#3a76e6,#fA5A55);
+}
+aside ul{
+
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
+    padding: 0;
+    margin: 0;
+    
+}
+aside ul li{
+    flex: 20%;
+list-style: none;
+}
+aside ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+aside ul li a span{
+    flex: 1;
+    line-height:27px;
+    text-align: center;
+}
+aside ul li a span:nth-child(2n-1)::before{
+content: '\e909';
+display: block;
+font-family: 'icomoon';
+}

@@ -1,0 +1,60 @@
+/* div{
+    width: 30rem;
+    height: 30rem;
+    background-color: yellow;
+}
+p{
+    width: 20rem;
+    height: 20rem;相对于html元素的文字大小
+    width: 20em;相对于父元素的字体大小
+    height: 20em;
+ 
+    background-color: yellowgreen;
+}
+html{
+    font-size: 12px;
+} */
+@media screen and (min-width:801px){
+    html{
+        font-size: 30px;
+    }
+    body{
+
+        background-color: slategray;
+    }
+}
+@media screen and (max-width:800px){
+    html{
+        font-size: 20px;
+    }
+    body{
+        background-color: violet;
+    }
+}/*在屏幕上并且最大宽度为800px*/
+@media screen and (max-width:600px){
+    html{
+        font-size: 15px;
+    }
+    body{
+        background-color: yellow;
+    }
+}
+@media screen and (max-width:500px){
+    html{
+        font-size: 12px;
+    }
+    body{
+        background-color: teal;
+    }
+}
+div{
+    background-color: blue;
+    width: 30rem;
+    height: 10rem;
+}
+p{
+    background-color: purple;
+    font-size: 1rem;
+    height: 5rem;
+    width: 15rem;
+}
